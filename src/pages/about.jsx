@@ -1,26 +1,25 @@
 import React from 'react';
-import { Flex, Image, Text, Box, Heading } from '@chakra-ui/react';
+import { Flex, Text, Box, Image } from '@chakra-ui/react';
 import { ProfileImage } from '../components';
 import Sidebar from '../components/Sidebar';
 
-const Home = () => {
+const About = () => {
   return (
     <Sidebar>
       <Box height={'100vh'}>
         <Flex padding="0 60px" height="100%" align="center" justify="space-between">
           <Text
             as="div"
-            fontSize={42}
+            fontSize={28}
             align="center"
             fontFamily="'Epilogue', sans-serif"
-            width="50%"
+            width="60%"
           >
-            <Heading as="h1" size="2xl" fontWeight="light">
-              Hi, I’m Elvis
-            </Heading>
-            <Heading as="h1" size="4xl" fontWeight="light" letterSpacing="2px">
-              I Build Softwares
-            </Heading>
+            <Text>I am a Professional Software Developer</Text>
+            <Text>
+              Aiming to help Companies and Individuals Build Robust Applications that
+              Engage exceptional Users Experience and Drive Business Growth
+            </Text>
           </Text>
           <ProfileImage />
         </Flex>
@@ -29,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;
