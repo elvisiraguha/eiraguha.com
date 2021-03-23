@@ -11,8 +11,8 @@ const Projects = () => {
       thumbnail: 'tt',
     },
     {
-      title: 'tt',
-      link: 'll',
+      title: 'Barefoot Nomad',
+      link: 'http://script-heroes-bn-frontend-stg.herokuapp.com/',
       description: 'dd',
       thumbnail: 'tt',
     },
@@ -55,7 +55,13 @@ const Projects = () => {
   ];
   return (
     <Sidebar>
-      <div className="content-projects">{/* ß */}</div>
+      <Box height="100%">
+        {/* <Grid gridTemplateColumns="1fr 1fr 1fr" gridGap="20px">
+          {projects.map((project, index) => (
+            <GridItem key={index}>project</GridItem>
+          ))}
+        </Grid> */}
+      </Box>
     </Sidebar>
   );
 };
