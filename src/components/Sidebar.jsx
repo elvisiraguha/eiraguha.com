@@ -25,6 +25,7 @@ const Sidebar = ({ children }) => {
         d="flex"
         justifyContent="center"
         alignItems="center"
+        position="fixed"
       >
         <List width="100%">
           {routes.map((route, index) => (
@@ -44,7 +45,9 @@ const Sidebar = ({ children }) => {
           ))}
         </List>
       </Box>
-      <Box width="90%">{children}</Box>
+      <Box width="90%" position="absolute" left="10%">
+        {children}
+      </Box>
     </Box>
   );
 };
