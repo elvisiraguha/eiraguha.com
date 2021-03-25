@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Link, Icon, HStack, Text } from '@chakra-ui/react';
+import { Box, Heading, Link, Icon, HStack, Text, Grid, GridItem } from '@chakra-ui/react';
 import socialLinks from '../data/socialLinks';
 
 const OnTheInternet = () => {
@@ -12,31 +12,40 @@ const OnTheInternet = () => {
       flexDirection="column"
       px="4"
     >
-      <Heading textAlign="center" mb="10">
-        Other Channels
-      </Heading>
-      <Box alignSelf="center">
+      <Grid
+        width="80%"
+        alignItems="center"
+        justifyContent="center"
+        gridTemplateColumns="repeat(auto-fit, 70px)"
+        gridGap="20px"
+        justifyItems="center"
+        alignSelf="center"
+      >
         {socialLinks.map((chann, index) => (
-          <HStack
-            my="2"
+          <GridItem
             key={index}
             as="a"
             href={chann.link}
             target="_blank"
             color="#fff"
-            borderRadius="6px"
+            borderRadius="4px"
             bg="teal.400"
-            border="1px solid #fff"
+            width="50px"
+            height="50px"
+            d="flex"
+            justifyContent="center"
+            alignItems="center"
+            title={chann.tittle}
           >
-            <Box d="inline" p="3" borderRight="1px solid white">
-              <Icon w={6} h={6} as={chann.icon} />
+            <Box d="inline" p="2">
+              <Icon w={8} h={8} as={chann.icon} />
             </Box>
-            <Text fontSize="18px" d="inline" paddingRight="2">
+            {/* <Text fontSize="18px" d="inline" paddingRight="2">
               {chann.userName}
-            </Text>
-          </HStack>
+            </Text> */}
+          </GridItem>
         ))}
-      </Box>
+      </Grid>
     </Box>
   );
 };

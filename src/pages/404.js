@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Layout';
 import { Text, Button, Box } from '@chakra-ui/react';
 
 const NotFoundPage = () => {

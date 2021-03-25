@@ -1,4 +1,4 @@
-import Sidebar from './Sidebar';
+import Sidebar from './Layout';
 import ProfileImage from './ProfileImage';
 import ContactMe from './ContactMe';
 import OnTheInternet from './OnTheInternet';

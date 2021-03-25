@@ -1,6 +1,6 @@
 import { Grid, GridItem, Box, Text, Tag, Icon } from '@chakra-ui/react';
 import React from 'react';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Layout';
 import skills from '../data/skills';
 
 const Skills = () => {

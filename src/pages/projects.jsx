@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Box, GridItem, Text } from '@chakra-ui/react';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const Projects = () => {

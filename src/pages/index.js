@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, Image, Text, Box, Heading } from '@chakra-ui/react';
 import { ProfileImage } from '../components';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Layout';
 
 const Home = () => {
   return (

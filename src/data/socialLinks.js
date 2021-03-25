@@ -1,10 +1,12 @@
 import {
   FaFacebookF,
+  FaHackerrank,
   FaLinkedinIn,
-  FaWhatsapp,
   FaTwitter,
   FaInstagram,
+  FaDev,
 } from 'react-icons/fa';
+import { SiStackoverflow, SiMedium } from 'react-icons/si';
 import { GoMarkGithub } from 'react-icons/go';
 
 const socialLinks = [
@@ -39,10 +41,28 @@ const socialLinks = [
     icon: FaFacebookF,
   },
   {
-    tittle: 'Whatsapp',
-    link: '#',
-    userName: '+250783984662',
-    icon: FaWhatsapp,
+    tittle: 'Dev',
+    link: 'https://dev.to/elvisiraguha',
+    userName: 'elvisiraguha',
+    icon: FaDev,
+  },
+  {
+    tittle: 'Hackerrank',
+    link: 'https://www.hackerrank.com/elvisiraguha',
+    userName: 'elvisiraguha',
+    icon: FaHackerrank,
+  },
+  {
+    tittle: 'Stack Overflow',
+    link: 'https://stackoverflow.com/users/8957840/iraguha-elvis',
+    userName: 'iraguha-elvis',
+    icon: SiStackoverflow,
+  },
+  {
+    tittle: 'Medium',
+    link: 'https://medium.com/@elvisiraguha',
+    userName: 'elvisiraguha',
+    icon: SiMedium,
   },
 ];
 

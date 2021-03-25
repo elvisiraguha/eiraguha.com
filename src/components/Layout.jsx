@@ -1,12 +1,34 @@
 import React from 'react';
 import { Link as RouterLink } from 'gatsby';
-import { ListItem, List, Icon, Box, Text, Link } from '@chakra-ui/react';
+import {
+  ListItem,
+  List,
+  Icon,
+  Box,
+  Text,
+  Link,
+  ChakraProvider,
+  extendTheme,
+  Container,
+  Stack,
+  Heading,
+} from '@chakra-ui/react';
 import routes from '../routes';
 import { globalHistory } from '@reach/router';
 import { Helmet } from 'react-helmet';
+import { Fonts } from './Fonts';
+
+const theme = extendTheme({
+  fonts: {
+    heading: 'Open Sans',
+    body: 'Raleway',
+  },
+});
 
 const Sidebar = ({ children }) => {
   return (
+    // <ChakraProvider theme={theme}>
+    //   <Fonts />
     <Box
       h="100%"
       d="flex"
@@ -49,6 +71,7 @@ const Sidebar = ({ children }) => {
         {children}
       </Box>
     </Box>
+    // </ChakraProvider>
   );
 };
 
