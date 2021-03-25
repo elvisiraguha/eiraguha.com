@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text, Box, Image } from '@chakra-ui/react';
+import { Flex, Text, Box, Image, Button } from '@chakra-ui/react';
 import { ProfileImage } from '../components';
 import Sidebar from '../components/Layout';
 
@@ -20,6 +20,17 @@ const About = () => {
               Aiming to help Companies and Individuals Build Robust Applications that
               Engage exceptional Users Experience and Drive Business Growth
             </Text>
+            <Button
+              mt="4"
+              as="a"
+              href="https://docs.google.com/document/d/10LHJmI1cibvP8B4vOIhpmWf8zJGxjZtbtdi9Y_fRkwU/preview"
+              target="_blank"
+              borderRadius="0"
+              bg="teal.300"
+              _hover={{ bg: 'teal.400' }}
+            >
+              Resume
+            </Button>
           </Text>
           <ProfileImage />
         </Flex>
