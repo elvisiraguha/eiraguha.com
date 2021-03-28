@@ -15,12 +15,13 @@ import { AiFillHeart } from 'react-icons/ai';
 const ContactMe = () => {
   return (
     <Box
-      width="50%"
+      width={['100%', '100%', '100%', '50%', '50%']}
       justifyContent="center"
       d="flex"
       align="center"
       flexDirection="column"
       px="4"
+      mb={['40px', '40px', '40px', null, null]}
     >
       <Heading textAlign="center" mb="1">
         Contact Me

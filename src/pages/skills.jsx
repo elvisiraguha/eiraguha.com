@@ -8,10 +8,10 @@ const Skills = () => {
     <Sidebar>
       <Grid
         py="10"
-        height="100%"
         gridTemplateColumns="repeat(auto-fit, 200px)"
-        gridGap="20px"
+        gridGap={['10px', '10px', '20px', '20px', '20px']}
         justifyContent="center"
+        pb={['100px', '70px', '70px', null, null]}
         justifyItems="center"
       >
         {skills.map((skill, index) => (
