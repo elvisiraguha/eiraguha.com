@@ -1,22 +1,22 @@
-import React from 'react';
-import { Grid, Box, GridItem, Text, Image, Button } from '@chakra-ui/react';
-import Sidebar from '../components/Layout';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React from "react";
+import { Grid, Box, GridItem, Text, Image, Button } from "@chakra-ui/react";
+import Sidebar from "../components/Layout";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const Projects = ({ data }) => {
-  const projects = [
+const Work = ({ data }) => {
+  const work = [
     {
-      title: 'Ishuri',
-      link: 'ishuri.surge.sh',
-      description: 'lorem ipsum lrrr',
-      src: '../images/ishuri.png',
+      title: "Ishuri",
+      link: "ishuri.surge.sh",
+      description: "lorem ipsum lrrr",
+      src: "../images/ishuri.png",
     },
     {
-      title: 'Barefoot Nomad',
-      link: 'http://script-heroes-bn-frontend-stg.herokuapp.com/',
-      description: 'dd',
-      src: '../images/barefoot.png',
+      title: "Barefoot Nomad",
+      link: "http://script-heroes-bn-frontend-stg.herokuapp.com/",
+      description: "dd",
+      src: "../images/barefoot.png",
     },
   ];
   return (
@@ -30,7 +30,7 @@ const Projects = ({ data }) => {
         justifyItems="center"
         alignItems="center"
       >
-        {projects.map((project, index) => {
+        {work.map((project, index) => {
           return (
             <GridItem
               key={index}
@@ -63,7 +63,7 @@ const Projects = ({ data }) => {
                 width="100px"
                 mx="auto"
                 bg="teal.500"
-                _hover={{ bg: 'teal.400' }}
+                _hover={{ bg: "teal.400" }}
                 color="white"
               >
                 VIEW
@@ -95,7 +95,7 @@ const Projects = ({ data }) => {
 };
 
 // export const query = graphql`
-//   query projects {
+//   query work {
 //     fileName: file(relativePath: { eq: "images/ishuri.png" }) {
 //       thumbnail {
 //         childImageSharp {
@@ -108,4 +108,4 @@ const Projects = ({ data }) => {
 //   }
 // `;
 
-export default Projects;
+export default Work;
