@@ -1,17 +1,58 @@
-import { Grid, GridItem, Box, Text, Tag, Icon } from '@chakra-ui/react';
-import React from 'react';
-import Sidebar from '../components/Layout';
-import skills from '../data/skills';
+import { Grid, GridItem, Box, Text, Tag, Icon } from "@chakra-ui/react";
+import React from "react";
+import Sidebar from "../components/Layout";
+import { Helmet } from "react-helmet";
+import skills from "../data/skills";
 
 const Skills = () => {
   return (
     <Sidebar>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Skills | Elvis Iraguha</title>
+
+        <meta name="author" content="Elvis Iraguha" />
+        <meta
+          name="description"
+          content="I have working experience over the web development technologies front to back"
+        />
+        <link rel="canonical" href="https://eiraguha.com/skills" />
+
+        <meta
+          name="keywords"
+          content="Elvis, Iraguha, eiraguha, skills, web developer, full stack, software, Kigali, Rwanda, git, js, html, css, react, node, sass, python, developer"
+        />
+
+        <meta property="og:title" content="Skills" />
+        <meta property="og:site_name" content="Elvis Iraguha" />
+        <meta
+          property="og:description"
+          content="I have working experience over the web development technologies front to back"
+        />
+        <meta property="og:url" content="https://eiraguha.com/skills" />
+        <meta
+          property="og:image"
+          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+        />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Skills" />
+        <meta
+          name="twitter:description"
+          content="I have working experience over the web development technologies front to back"
+        />
+        <meta name="twitter:url" content="https://eiraguha.com/skills" />
+        <meta
+          name="twitter:image"
+          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+        />
+      </Helmet>
       <Grid
         py="10"
         gridTemplateColumns="repeat(auto-fit, 200px)"
-        gridGap={['10px', '10px', '20px', '20px', '20px']}
+        gridGap={["10px", "10px", "20px", "20px", "20px"]}
         justifyContent="center"
-        pb={['100px', '70px', '70px', null, null]}
+        pb={["100px", "70px", "70px", null, null]}
         justifyItems="center"
       >
         {skills.map((skill, index) => (
@@ -26,7 +67,12 @@ const Skills = () => {
             border={`1px solid ${skill.color}`}
             borderRadius="10px"
           >
-            <Tag size="md" variant="subtle" borderRadius="0" colorScheme={skill.color}>
+            <Tag
+              size="md"
+              variant="subtle"
+              borderRadius="0"
+              colorScheme={skill.color}
+            >
               {skill.stack}
             </Tag>
             <Text>{skill.title}</Text>

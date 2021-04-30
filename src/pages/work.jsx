@@ -3,24 +3,65 @@ import { Grid, Box, GridItem, Text, Image, Button } from "@chakra-ui/react";
 import Sidebar from "../components/Layout";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Helmet } from "react-helmet";
 
 const Work = ({ data }) => {
   const work = [
     {
       title: "Ishuri",
-      link: "ishuri.surge.sh",
+      link: "https://ishuri.surge.sh",
       description: "lorem ipsum lrrr",
       src: "../images/ishuri.png",
     },
     {
       title: "Barefoot Nomad",
-      link: "http://script-heroes-bn-frontend-stg.herokuapp.com/",
+      link: "https://script-heroes-bn-frontend-stg.herokuapp.com/",
       description: "dd",
       src: "../images/barefoot.png",
     },
   ];
   return (
     <Sidebar>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Work & Projects | Elvis Iraguha</title>
+
+        <meta name="author" content="Elvis Iraguha" />
+        <meta
+          name="description"
+          content="I have working experience over the web development technologies front to back"
+        />
+        <link rel="canonical" href="https://eiraguha.com/work" />
+
+        <meta
+          name="keywords"
+          content="Elvis, Iraguha, eiraguha, skills, web developer, full stack, software, Kigali, Rwanda, git, js, html, css, react, node, sass, python, developer"
+        />
+
+        <meta property="og:title" content="Work & Projects" />
+        <meta property="og:site_name" content="Elvis Iraguha" />
+        <meta
+          property="og:description"
+          content="I have working experience over the web development technologies front to back"
+        />
+        <meta property="og:url" content="https://eiraguha.com/work" />
+        <meta
+          property="og:image"
+          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+        />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Work & Projects" />
+        <meta
+          name="twitter:description"
+          content="I have working experience over the web development technologies front to back"
+        />
+        <meta name="twitter:url" content="https://eiraguha.com/work" />
+        <meta
+          name="twitter:image"
+          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+        />
+      </Helmet>
       <Grid
         height="100vh"
         py="10"
