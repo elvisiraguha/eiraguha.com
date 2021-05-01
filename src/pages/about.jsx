@@ -56,7 +56,7 @@ const About = () => {
       >
         <Text
           as="div"
-          fontSize={[28, 28, 36, 36, 36]}
+          fontSize={[28, 28, 32, 32, 32]}
           align="center"
           width={["80%", "80%", "80%", "50", "50%"]}
         >

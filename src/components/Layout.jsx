@@ -10,14 +10,14 @@ import {
   ChakraProvider,
   extendTheme,
 } from "@chakra-ui/react";
+import "@fontsource/inter";
 import routes from "../routes";
 import { globalHistory } from "@reach/router";
-import { Fonts } from "./Fonts";
 
 const theme = extendTheme({
   fonts: {
-    heading: "Sans",
-    body: "Sans",
+    heading: "Inter",
+    body: "Inter",
   },
 });
 
@@ -102,6 +102,7 @@ const Sidebar = ({ children }) => {
                     />
                     <Text
                       display={["none", "none", "none", "inline", "inline"]}
+                      fontSize={20}
                     >
                       {route.title}
                     </Text>

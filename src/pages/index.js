@@ -7,7 +7,11 @@ import Sidebar from "../components/Layout";
 const Home = () => {
   return (
     <Sidebar>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
         <meta charSet="utf-8" />
         <title>Elvis Iraguha | Personal Portfolio Website</title>
 
@@ -49,7 +53,7 @@ const Home = () => {
         />
         <meta name="twitter:url" content="http://www.eiraguha.com" />
         <meta
-          name="twitter:image"
+          name="twitter:image:src"
           content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
         />
       </Helmet>

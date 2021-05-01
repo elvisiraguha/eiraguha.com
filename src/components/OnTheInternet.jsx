@@ -1,16 +1,24 @@
-import React from 'react';
-import { Box, Heading, Link, Icon, HStack, Grid, GridItem } from '@chakra-ui/react';
-import socialLinks from '../data/socialLinks';
+import React from "react";
+import {
+  Box,
+  Heading,
+  Link,
+  Icon,
+  HStack,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
+import socialLinks from "../data/socialLinks";
 
 const OnTheInternet = () => {
   return (
     <Box
-      width={['100%', '100%', '100%', '50%', '50%']}
+      width={["100%", "100%", "100%", "50%", "50%"]}
       justifyContent="center"
       d="flex"
       align="center"
       flexDirection="column"
-      pb={['100px', '70px', '70px', null, null]}
+      pb={["100px", "70px", "70px", null, null]}
       px="4"
     >
       <Heading textAlign="center" mb="4">

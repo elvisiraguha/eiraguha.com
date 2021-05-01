@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Heading,
@@ -9,19 +9,19 @@ import {
   Icon,
   Input,
   Textarea,
-} from '@chakra-ui/react';
-import { AiFillHeart } from 'react-icons/ai';
+} from "@chakra-ui/react";
+import { AiFillHeart } from "react-icons/ai";
 
 const ContactMe = () => {
   return (
     <Box
-      width={['100%', '100%', '100%', '50%', '50%']}
+      width={["100%", "100%", "100%", "50%", "50%"]}
       justifyContent="center"
       d="flex"
       align="center"
       flexDirection="column"
       px="4"
-      mb={['40px', '40px', '40px', null, null]}
+      mb={["40px", "40px", "40px", null, null]}
     >
       <Heading textAlign="center" mb="1">
         Contact Me
@@ -29,7 +29,9 @@ const ContactMe = () => {
       <Text fontWeight="light" color="gray.400" mb="4">
         I will be happy to connect with you <Icon as={AiFillHeart} />
       </Text>
-      <Text>I am Interested in Software Business Opportunities and the Likes.</Text>
+      <Text>
+        I am Interested in Software Business Opportunities and the Likes.
+      </Text>
       <Text>Or if you have any Question, Request, want to say Hello </Text>
       <Text>Don't hesitate to ping me using the form below</Text>
       <Box as="form" mt="3">
@@ -46,7 +48,7 @@ const ContactMe = () => {
         </FormControl>
         <Textarea my="4" placeholder="Put the message here" />
       </Box>
-      <Button bg="teal.400" color="#fff" _hover={{ background: 'teal.600' }}>
+      <Button bg="teal.400" color="#fff" _hover={{ background: "teal.600" }}>
         Send
       </Button>
     </Box>
