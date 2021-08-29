@@ -68,7 +68,7 @@ const About = () => {
           <Button
             mt="4"
             as="a"
-            href="https://docs.google.com/document/d/1erpctCnY-WijV_ZXjj7z0e-dFhFCog_A0FdBgM63_NE/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1erpctCnY-WijV_ZXjj7z0e-dFhFCog_A0FdBgM63_NE/preview"
             target="_blank"
             borderRadius="0"
             bg="teal.300"

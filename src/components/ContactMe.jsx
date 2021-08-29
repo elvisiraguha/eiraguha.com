@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Heading,
@@ -13,6 +13,33 @@ import {
 import { AiFillHeart } from "react-icons/ai";
 
 const ContactMe = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [response, setResponse] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = () => {
+    setLoading(true);
+    fetch("http://my-brand.herokuapp.com/api/queries", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        subject,
+        message,
+      }),
+      mode: "no-cors",
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <Box
       width={["100%", "100%", "100%", "50%", "50%"]}
@@ -37,18 +64,43 @@ const ContactMe = () => {
       <Box as="form" mt="3">
         <HStack my="4">
           <FormControl id="name">
-            <Input type="text" placeholder="Full Name" />
+            <Input
+              type="text"
+              placeholder="Full Name"
+              value={name}
+              onChange={({ target }) => setName(target.value)}
+            />
           </FormControl>
           <FormControl id="email">
-            <Input type="email" placeholder="Email" />
+            <Input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={({ target }) => setEmail(target.value)}
+            />
           </FormControl>
         </HStack>
         <FormControl id="subject">
-          <Input type="text" placeholder="Subject" />
+          <Input
+            type="text"
+            placeholder="Subject"
+            value={subject}
+            onChange={({ target }) => setSubject(target.value)}
+          />
         </FormControl>
-        <Textarea my="4" placeholder="Put the message here" />
+        <Textarea
+          my="4"
+          placeholder="Put the message here"
+          value={message}
+          onChange={({ target }) => setMessage(target.value)}
+        />
       </Box>
-      <Button bg="teal.400" color="#fff" _hover={{ background: "teal.600" }}>
+      <Button
+        bg="teal.400"
+        color="#fff"
+        _hover={{ background: "teal.600" }}
+        onClick={handleSubmit}
+      >
         Send
       </Button>
     </Box>
