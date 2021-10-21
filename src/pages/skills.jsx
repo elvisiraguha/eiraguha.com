@@ -1,4 +1,4 @@
-import { Grid, GridItem, Box, Text, Tag, Icon } from "@chakra-ui/react";
+import { Grid, GridItem, Text, Tag, Icon } from "@chakra-ui/react";
 import React from "react";
 import Sidebar from "../components/Layout";
 import { Helmet } from "react-helmet";

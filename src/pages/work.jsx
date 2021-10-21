@@ -1,8 +1,6 @@
 import React from "react";
-import { Grid, Box, GridItem, Text, Image, Button } from "@chakra-ui/react";
+import { Grid, Box, GridItem, Text, Button } from "@chakra-ui/react";
 import Sidebar from "../components/Layout";
-import { graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
 
 const Work = ({ data }) => {

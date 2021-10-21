@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Link,
-  Icon,
-  HStack,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Box, Heading, Icon, Grid, GridItem } from "@chakra-ui/react";
 import socialLinks from "../data/socialLinks";
 
 const OnTheInternet = () => {

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Image, Box } from '@chakra-ui/react';
-import { StaticImage } from 'gatsby-plugin-image';
+import React from "react";
+import { Box } from "@chakra-ui/react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ProfileImage = () => {
   return (
     <Box
       boxSize="sm"
-      width={['70%', '70%', '60%', '40%', '40%']}
+      width={["70%", "70%", "60%", "40%", "40%"]}
       height="100%"
       d="flex"
       alignItems="center"

@@ -17,7 +17,6 @@ const ContactMe = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = () => {

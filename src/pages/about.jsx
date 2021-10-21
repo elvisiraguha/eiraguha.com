@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Box, Image, Button } from "@chakra-ui/react";
+import { Flex, Text, Button } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import { ProfileImage } from "../components";
 import Sidebar from "../components/Layout";
@@ -68,7 +68,7 @@ const About = () => {
           <Button
             mt="4"
             as="a"
-            href="https://docs.google.com/document/d/1erpctCnY-WijV_ZXjj7z0e-dFhFCog_A0FdBgM63_NE/preview"
+            href="/Elvis Iraguha Resume.pdf"
             target="_blank"
             borderRadius="0"
             bg="teal.300"

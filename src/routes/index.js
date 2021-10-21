@@ -5,7 +5,6 @@ import About from "../pages/about";
 import Projects from "../pages/work";
 import Skills from "../pages/skills";
 import Connect from "../pages/connect";
-import Reviews from "../pages/reviews";
 
 const routes = [
   {
