@@ -39,10 +39,10 @@ const Home = () => {
         <meta property="og:url" content="https://eiraguha.com" />
         <meta
           property="og:image"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://firebasestorage.googleapis.com/v0/b/my-brand-96113.appspot.com/o/profile.png?alt=media&token=ccfd784b-b3f1-413a-9fac-27fee80d144f"
         />
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
           content="Elvis Iraguha | Personal Portfolio Website"
@@ -54,7 +54,7 @@ const Home = () => {
         <meta name="twitter:url" content="http://www.eiraguha.com" />
         <meta
           name="twitter:image:src"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://firebasestorage.googleapis.com/v0/b/my-brand-96113.appspot.com/o/profile.png?alt=media&token=ccfd784b-b3f1-413a-9fac-27fee80d144f"
         />
       </Helmet>
       <Flex
