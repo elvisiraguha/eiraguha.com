@@ -1,5 +1,5 @@
-import React from 'react';
-import { ChakraProvider, CSSReset, extendTheme } from '@chakra-ui/react';
+import React from "react";
+import { ChakraProvider, CSSReset, extendTheme } from "@chakra-ui/react";
 
 const customTheme = extendTheme({});
 

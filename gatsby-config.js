@@ -51,5 +51,19 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
+    {
+      resolve: "gatsby-plugin-firebase-v9.0",
+      options: {
+        credentials: {
+          databaseURL: "",
+          apiKey: "AIzaSyB_jJUREdcaqNFhhYzlXZyeDhOIuhQQo58",
+          authDomain: "elvisiraguha.firebaseapp.com",
+          projectId: "elvisiraguha",
+          storageBucket: "elvisiraguha.appspot.com",
+          messagingSenderId: "540036592487",
+          appId: "1:540036592487:web:283186373c7de8dd0bb5c2",
+        },
+      },
+    },
   ],
 };
