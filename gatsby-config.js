@@ -1,4 +1,5 @@
 const path = require("path");
+require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 
 module.exports = {
   siteMetadata: {
@@ -56,12 +57,12 @@ module.exports = {
       options: {
         credentials: {
           databaseURL: "",
-          apiKey: "AIzaSyB_jJUREdcaqNFhhYzlXZyeDhOIuhQQo58",
-          authDomain: "elvisiraguha.firebaseapp.com",
-          projectId: "elvisiraguha",
-          storageBucket: "elvisiraguha.appspot.com",
-          messagingSenderId: "540036592487",
-          appId: "1:540036592487:web:283186373c7de8dd0bb5c2",
+          apiKey: process.env.API_KEY,
+          authDomain: process.env.AUTH_DOMAIN,
+          projectId: process.env.PROJECT_ID,
+          storageBucket: process.env.STORAGE_BUCKET,
+          messagingSenderId: process.env.MESSAGING_SENDER_ID,
+          appId: process.env.APP_ID,
         },
       },
     },
