@@ -16,7 +16,7 @@ const Skills = () => {
           name="description"
           content="I have working experience over the web development technologies front to back"
         />
-        <link rel="canonical" href="https://eiraguha.com/skills" />
+        <link rel="canonical" href="https://elvisiraguha.com/skills" />
 
         <meta
           name="keywords"
@@ -29,10 +29,10 @@ const Skills = () => {
           property="og:description"
           content="I have working experience over the web development technologies front to back"
         />
-        <meta property="og:url" content="https://eiraguha.com/skills" />
+        <meta property="og:url" content="https://elvisiraguha.com/skills" />
         <meta
           property="og:image"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://elvisiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
         />
 
         <meta name="twitter:card" content="summary" />
@@ -41,10 +41,10 @@ const Skills = () => {
           name="twitter:description"
           content="I have working experience over the web development technologies front to back"
         />
-        <meta name="twitter:url" content="https://eiraguha.com/skills" />
+        <meta name="twitter:url" content="https://elvisiraguha.com/skills" />
         <meta
           name="twitter:image"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://elvisiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
         />
       </Helmet>
       <Grid

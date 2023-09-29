@@ -29,7 +29,7 @@ const Work = ({ data }) => {
           name="description"
           content="I have working experience over the web development technologies front to back"
         />
-        <link rel="canonical" href="https://eiraguha.com/work" />
+        <link rel="canonical" href="https://elvisiraguha.com/work" />
 
         <meta
           name="keywords"
@@ -42,10 +42,10 @@ const Work = ({ data }) => {
           property="og:description"
           content="I have working experience over the web development technologies front to back"
         />
-        <meta property="og:url" content="https://eiraguha.com/work" />
+        <meta property="og:url" content="https://elvisiraguha.com/work" />
         <meta
           property="og:image"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://elvisiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
         />
 
         <meta name="twitter:card" content="summary" />
@@ -54,10 +54,10 @@ const Work = ({ data }) => {
           name="twitter:description"
           content="I have working experience over the web development technologies front to back"
         />
-        <meta name="twitter:url" content="https://eiraguha.com/work" />
+        <meta name="twitter:url" content="https://elvisiraguha.com/work" />
         <meta
           name="twitter:image"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://elvisiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
         />
       </Helmet>
       <Grid

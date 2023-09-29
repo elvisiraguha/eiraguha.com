@@ -16,7 +16,7 @@ const Connect = () => {
           name="description"
           content="I will be happy to connect with you, don't hesitate to reach out: +250783984662"
         />
-        <link rel="canonical" href="https://eiraguha.com/connect" />
+        <link rel="canonical" href="https://elvisiraguha.com/connect" />
 
         <meta
           name="keywords"
@@ -29,10 +29,10 @@ const Connect = () => {
           property="og:description"
           content="I will be happy to connect with you, don't hesitate to reach out: +250783984662"
         />
-        <meta property="og:url" content="https://eiraguha.com/connect" />
+        <meta property="og:url" content="https://elvisiraguha.com/connect" />
         <meta
           property="og:image"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://elvisiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
         />
 
         <meta name="twitter:card" content="summary" />
@@ -41,10 +41,10 @@ const Connect = () => {
           name="twitter:description"
           content="I will be happy to connect with you, don't hesitate to reach out: +250783984662"
         />
-        <meta name="twitter:url" content="https://www.eiraguha.com/connect" />
+        <meta name="twitter:url" content="https://www.elvisiraguha.com/connect" />
         <meta
           name="twitter:image"
-          content="https://eiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
+          content="https://elvisiraguha.com/static/a5c3bc4d57a796f746317aaa7f5b6969/691d3/profile.webp"
         />
       </Helmet>
       <Stack

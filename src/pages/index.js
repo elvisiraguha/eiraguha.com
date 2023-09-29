@@ -20,7 +20,7 @@ const Home = () => {
           name="description"
           content="I build computer software. I am a self-taught developer with expertise in HTML5 & CSS3, JavaScript, ReactJs, Nodejs, Version Control Systems, Restful APIs, and Test-Driven Development."
         />
-        <link rel="canonical" href="https://eiraguha.com" />
+        <link rel="canonical" href="https://elvisiraguha.com" />
 
         <meta
           name="keywords"
@@ -36,7 +36,7 @@ const Home = () => {
           property="og:description"
           content="I build computer software. I am a self-taught developer with expertise in HTML5 & CSS3, JavaScript, ReactJs, Nodejs, Version Control Systems, Restful APIs, and Test-Driven Development."
         />
-        <meta property="og:url" content="https://eiraguha.com" />
+        <meta property="og:url" content="https://elvisiraguha.com" />
         <meta
           property="og:image"
           content="https://firebasestorage.googleapis.com/v0/b/my-brand-96113.appspot.com/o/profile.png?alt=media&token=ccfd784b-b3f1-413a-9fac-27fee80d144f"
@@ -51,7 +51,7 @@ const Home = () => {
           name="twitter:description"
           content="I build computer software. I am a self-taught developer with expertise in HTML5 & CSS3, JavaScript, ReactJs, Nodejs, Version Control Systems, Restful APIs, and Test-Driven Development."
         />
-        <meta name="twitter:url" content="http://www.eiraguha.com" />
+        <meta name="twitter:url" content="http://www.elvisiraguha.com" />
         <meta
           name="twitter:image:src"
           content="https://firebasestorage.googleapis.com/v0/b/my-brand-96113.appspot.com/o/profile.png?alt=media&token=ccfd784b-b3f1-413a-9fac-27fee80d144f"
@@ -86,7 +86,8 @@ const Home = () => {
             I Build Computer Software
           </Heading>
         </Text>
-        <ProfileImage />
+        {/* Hide profile image for now */}
+        {/* <ProfileImage /> */}
       </Flex>
     </Sidebar>
   );
